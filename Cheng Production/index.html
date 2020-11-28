@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>KZ Production</title>
+    <link rel="shotcut icon" type="image/png" href="img/camera-icon.png"/>
+
+    <!-- CSS Sheets -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/animate.min.css">
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+</head>
+
+<body id="my-portfolio" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+
+    <header class="fontainer-fluid bg-header" id="home">
+
+        <!-- For Adding BG Color -->
+        <div class="header-bg-gray">
+
+            <!-- Nav Bar begin -->
+            <nav class="navbar navbar-dark navbar-expand-md bg-dark fixed-top" id="my-navbar">
+
+                <!-- Nav Bar Logo -->
+                <a href="#home" class="navbar-brand"><img src="img/photography-logo-white.png"
+                        style=" height: 35px;" alt="logo"></a>
+
+                <!-- Toggler button when collapsed -->
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbar-content"
+                    aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navbar Links -->
+                <div class="collapse navbar-collapse" id="navbar-content">
+
+                    <!-- "ml-auto" right aligns the links -->
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#home" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#about" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#portfolio" class="nav-link">Portfolio</a>
+                        </li>
+                        <li class="nav-item nav-hide">
+                            <a href="#project" class="nav-link">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link">Contact</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </nav>
+            <!-- Nav Bar ends -->
+
+            <!-- Container for Banner Text -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 wow fadeIn" data-wow-delay="0.2s">
+
+                        <!-- Banner Text -->
+                        <div class="banner-text">
+                            <p> PORTFOLIO FOR</p>
+                            <h2>DESIGN &</h2>
+                            <h1>PHOTOGRAPHY</h1>
+                            <p class="home-sub"> Portrait, Landscape, Travel & Event </p>
+                        </div>
+
+                        <!-- Scroll to About Button -->
+                        <div class="scroll-to-about text-center">
+                            <a href="#about"><i class="fa fa-angle-down"></i></a>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <section id="about" class="section-padding wow fadeIn" data-wow-delay="0.5s">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-right">
+                    <h2 class="title-text">
+                        Meet <br><span class="decorate">Kevin</span> Zhang
+                    </h2>
+                </div>
+
+                <div class="col-md-6 text-left">
+                    <div class="about-text text-justify" >
+                        <p>I am an amateur photographer who is passionate about portrait photography. I love interacting with people and capture the best moments of their life. Always like to be taken part of the adventure.</p>
+                        
+                        <p>I have completed my undergraduate study in Mechanical Engineering at the University of Toronto, currently a student at Rotman Master of Management Analytics. As a hobby, I have spent my time learning photography. I have other ongoing projects, including web/app design, data analytics projects and etc. Some of the projects are uploaded on my <a href="https://github.com/ruikevinzhang?tab=repositories" target="_blank">Github</a>.</p>
+
+                        <p>I love to travel with my camera to capture the beautiful landscape and culture.</p>
+
+                        <p>Please feel free to inbox me with your photography request. I am open to being your photographer at any occasion, such as:</p>
+
+                        <ul class="about-list">
+                            <li> Professional</li>
+                            <li> Graduation</li>
+                            <li> Couple Anniversary</li>        
+                            <li> Other Portraits </li>                        
+                            <li> Travel </li>                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="section-padding" id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2 class="title text-center">
+                        <span class="decorate-title">Portfolio</span>
+                    </h2>
+                </div>
+            </div>
+
+
+
+            <div class="button-group ">
+                <button type="button" data-rel="all" class="filter button active">All</button>
+                <button type="button" data-rel="portrait" class="filter button">Portrait</button>
+                <button type="button" data-rel="landscape" class="filter button">Landscape</button>
+                <button type="button" data-rel="event" class="filter button">Event</button>
+                <button type="button" data-rel="others" class="filter button">Others</button>
+            </div>
+
+
+
+
+            <!-- Image Grid -->
+            <div class="container">
+                <div class="gallery" id="gallery">
+
+                    <div class="mb-3 pics animation all portrait"><a href="port26.html"><img src="img/port/img26.jpg" class="fit-image wow fadeInLeft" alt="portfolio"></a></div>
+                    <div class="mb-3 pics animation all portrait"><a href="port25.html"><img src="img/port/img25.jpg" class="fit-image wow fadeInLeft" alt="portfolio"></a></div>
+
+                    <div class="mb-3 pics animation all portrait"><a href="port24.html"><img src="img/port/img24.jpg" class="fit-image wow fadeInLeft" alt="portfolio"></a></div>
+                    <div class="mb-3 pics animation all portrait"><a href="port1.html"><img src="img/port/img1.jpg" class="fit-image wow fadeInLeft" alt="portfolio"></a></div>
+                    <div class="mb-3 pics animation all landscape"><a href="port2.html"><img src="img/port/img2.jpg" class="fit-image wow fadeInLeft" alt="portfolio"></a></div>
+                    <div class="mb-3 pics animation all portrait"><a href="port3.html"><img src="img/port/img3.jpg" class="fit-image wow fadeInLeft" alt="portfolio"></a></div>
+                    <div class="mb-3 pics animation all landscape"><a href="port4.html"><img src="img/port/img4.jpg" class="fit-image wow fadeInLeft" alt="portfolio"></a></div>
+
+                    <div class="mb-3 pics animation all event"><a href="port13.html"><img src="img/port/img13.jpg" class="fit-image wow fadeInLeft" alt="portfolio"></a></div>
+                    <div class="mb-3 pics animation all landscape"><a href="port14.html"><img src="img/port/img14.jpg" class="fit-image wow fadeInLeft" alt="portfolio"></a></div>
+                    <div class="mb-3 pics animation all portrait"><a href="port15.html"><img src="img/port/img15.jpg" class="fit-image wow fadeInLeft"  alt="portfolio"></a></div>
+                    <div class="mb-3 pics animation all portrait"><a href="port16.html"><img src="img/port/img16.jpg" class="fit-image wow fadeInLeft" alt="portfolio"></a></div>
+
+
+                    <div class="mb-3 pics animation all landscape"><a href="port5.html"><img src="img/port/img5.jpg" class="fit-image wow fadeInLeft" alt="portfolio"></a></div>
+                    <div class="mb-3 pics animation all portrait"><a href="port6.html"><img src="img/port/img6.jpg" class="fit-image wow fadeInLeft" alt="portfolio"></a></div>
+                    <div class="mb-3 pics animation all portrait"><a href="port7.html"><img src="img/port/img7.jpg" class="fit-image wow fadeInLeft" alt="portfolio"></a></div>
+                    <div class="mb-3 pics animation all landscape"><a href="port8.html"><img src="img/port/img8.jpg" class="fit-image wow fadeInLeft" alt="portfolio"></a></div>
+                    <!-- 2.7s for the next image -->
+                    <div class="mb-3 pics animation all portrait"><a href="port17.html"><img src="img/port/img17.jpg" class="fit-image wow fadeInLeft" alt="portfolio"></a></div>
+                    <div class="mb-3 pics animation all landscape"><a href="port18.html"><img src="img/port/img18.jpg" class="fit-image wow fadeInLeft" alt="portfolio"></a></div>
+                    <div class="mb-3 pics animation all landscape"><a href="port19.html"><img src="img/port/img19.jpg" class="fit-image wow fadeInLeft" alt="portfolio"></a></div>
+                    <div class="mb-3 pics animation all landscape"><a href="port20.html"><img src="img/port/img20.jpg" class="fit-image wow fadeInLeft" alt="portfolio"></a></div>
+                
+
+
+
+                    <div class="mb-3 pics animation all portrait"><a href="port9.html"><img src="img/port/img9.jpg" class="fit-image wow fadeInLeft" alt="portfolio"></a></div>
+                    <div class="mb-3 pics animation all landscape"><a href="port10.html"><img src="img/port/img10.jpg" class="fit-image wow fadeInLeft" alt="portfolio"></a></div>
+                    <div class="mb-3 pics animation all portrait"><a href="port11.html"><img src="img/port/img11.jpg" class="fit-image wow fadeInLeft" alt="portfolio"></a></div>
+                    <div class="mb-3 pics animation all portrait"><a href="port12.html"><img src="img/port/img12.jpg" class="fit-image wow fadeInLeft" alt="portfolio"></a></div>
+                    <!-- 2.3s and 2.5s for additon photo -->
+                    <div class="mb-3 pics animation all landscape"><a href="port21.html"><img src="img/port/img21.jpg" class="fit-image wow fadeInLeft" alt="portfolio"></a></div>
+                    <div class="mb-3 pics animation all landscape"><a href="port22.html"><img src="img/port/img22.jpg" class="fit-image wow fadeInLeft" alt="portfolio"></a></div>
+                    <div class="mb-3 pics animation all portrait"><a href="port23.html"><img src="img/port/img23.jpg" class="fit-image wow fadeInLeft" alt="portfolio"></a></div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+    <section id="project" class="wow fadeInUp">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- title text -->
+                    <h2 class="text-center title text-dark"><strong>Projects</strong></h2>
+                    <!-- carousel Begins -->
+                    <div id="my-carousel" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#my-carousel" data-slide-to="0"></li>
+                            <li data-target="#my-carousel" data-slide-to="1" class="active"></li>
+                            <li data-target="#my-carousel" data-slide-to="2"></li>
+                        </ol>
+
+                        <div class="carousel-inner">
+                            <!-- Slide 1 -->
+                            <div class="carousel-item text-center">
+                                <div class="img-box border rounded-circle m-auto">
+                                    <img src="img/carousel-img1.jpg" class="d-block w-100 rounded-circle" alt="carousel">
+                                </div>
+                                <h5 class="py-1 my-1"><Strong class="text-warning text-uppercase">Production</Strong>
+                                </h5>
+                                <h6 class="text-dark m-1">Photo, Video</h6>
+                                <p class="pt-3 text-white">Photography is a personal hobby that I developed when I was travelling to different places. From landscapes to Portrait, I am looking forward to taking photos of various events to expand my portfolio. As part of the photography, I developed knowledge in editing photos and videos in Abode Softwares, including Lr, Ps, Pr, Ae and etc. A photography portfolio can be viewed on this website. Looking for people who are interested in being a model. Please contact me if interested.</p>
+                            </div>
+
+                            <!-- Slide 2 -->
+                            <div class="carousel-item text-center active">
+                                <div class="img-box border rounded-circle m-auto">
+                                    <img src="img/carousel-img2.png" class="d-block w-100 rounded-circle" alt="carousel">
+                                </div>
+                                <h5 class="py-1 my-1"><Strong class="text-warning text-uppercase">Design</Strong></h5>
+                                <h6 class="text-dark m-1">Web, App, Mechanical</h6>
+                                <p class="pt-3 text-white">As an engineering graduate, I am actively taking part in different design tasks, including mobile applications, websites, and mechanical designs. To keep up with the newest trend, I engage with different small projects to design and develop based on personal interests and market needs. This website is part of a project completed during the 2020 COVID Pandemic period. The ongoing project includes an Android application. Please let me know if there are any projects that you are interested in, or I can help out with. Some of the projects are upload on my <a href="https://github.com/ruikevinzhang?tab=repositories" target="_blank">Github</a>.</p>
+                            </div>
+
+                            <!-- Slide 3 -->
+                            <div class="carousel-item text-center">
+                                <div class="img-box border rounded-circle m-auto">
+                                    <img src="img/carousel-img3.png" class="d-block w-100 rounded-circle" alt="carousel">
+                                </div>
+                                <h5 class="py-1 my-1"><Strong class="text-warning text-uppercase">Music</Strong></h5>
+                                <h6 class="text-dark m-1">Ukelele, Erhu</h6>
+                                <p class="pt-3 text-white">I learned to play Erhu (Chinese music instruments) when I was 5 years old. Since then, I have been practicing and graduate from the highest examination in China. After joining an orchestra in China, we have performed in Vienna, Austria and won several international awards in the teenager category. After I moved to Canada, I have formed a Chinese instrument band to perform in the Toronto region in High School. In my leisure time, I learned how to play Ukelele, and I am further advancing my skills.</p>
+                            </div>
+
+                        </div>
+
+                        <!-- Carousel COntrols -->
+                        <a href="#my-carousel" class="carousel-control-prev" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+
+                        <a href="#my-carousel" class="carousel-control-next" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="clearfix"></div>
+
+
+    <section class="parallax">
+        <div class="parallax-inner">
+
+        </div>
+    </section>
+
+
+    <section class="section-padding wow fadeIn" data-wow-delay="0.6s" id="contact">
+        <div class="container">
+            <div class="contact-sec text-center">
+                <!-- title text -->
+                <h2 class="text-center title text-dark"><strong>Contact Me</strong></h2>
+                <p class="contact-text">Open to accept photographer request.</p>
+
+                <p class="contact-text">
+                    Email: ruikevinzhang@gmail.com <br class="break">
+                    Location: Toronto, ON, Canada <br class="break">
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="social-footer">
+        <ul class="social">
+            <li> <a href="https://www.facebook.com/kevin.zhang.79274089" target="_blank"><i
+                        class="fa fa-facebook"></i></a></li>
+
+            <li> <a href="https://www.youtube.com/channel/UCnzSGRJWMe3MxC3iwtFs7ZQ?view_as=subscriber" target="_blank"><i
+                        class="fa fa-youtube"></i></a></li>
+
+            <li> <a href="https://www.instagram.com/ruikevinzhang/" target="_blank"><i class="fa fa-instagram"></i></a>
+            </li>
+
+            <li> <a href="https://www.linkedin.com/in/ruikevinzhang/" target="_blank"><i class="fa fa-linkedin"></i></a>
+            </li>
+
+            <li> <a href="https://github.com/ruikevinzhang?tab=repositories" target="_blank"><i class="fa fa-github"></i></a>
+            </li>
+
+
+        </ul>
+    </footer>
+
+    <footer class="copyright text-center">
+
+        <div class="container">
+
+
+            <div class="d-flex flex-wrap justify-content-center">
+                <div class="p-2">
+
+                    <div class="credits text-white">
+                        <p>All Rights Reserved</p>
+                        <p>&copy; Photography. </p>
+                        <p>design and built by Kevin (RuiCheng) Zhang </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row text-center d-block">
+                <a href="#my-portfolio" title="To Top"><i class="fa fa-angle-up"></i></a>
+            </div>
+
+        </div>
+
+
+
+
+
+    </footer>
+
+
+
+    <!-- bootstrap js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+    <!-- code jquerry import -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+    <!-- instal masonry image grid -->
+        
+    <!-- JS Plug-in Smooth Srool Effect -->
+    <script type="text/javascript" src="js/jquery.smoothscroll.js"></script>
+    <!-- JS Plug -->
+    <script type="text/javascript" src="js/wow.min.js"></script>
+
+    <script type="text/javascript">new WOW().init()</script>
+
+    <script type="text/javascript" src="js/myscripts.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Portfolio</title>
+    <link rel="shotcut icon" type="image/png" href="img/camera-icon.png" />
+
+    <!-- CSS Sheets -->
+    <link rel="stylesheet" type="text/css" href="portstyle.css" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/animate.min.css">
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+</head>
+
+
+<body id="my-portfolio" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+
+    <header class="fontainer-fluid">
+
+        <!-- Nav Bar begin -->
+        <nav class="navbar navbar-dark navbar-expand-md bg-dark fixed-top" id="my-navbar">
+
+            <!-- Nav Bar Logo -->
+            <a href="index.html#home" class="navbar-brand"><img src="img/photography-logo-white.png"
+                    style=" height: 35px;" alt="logo"></a>
+
+            <!-- Toggler button when collapsed -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-content"
+                aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="navbar-content">
+
+                <!-- "ml-auto" right aligns the links -->
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="index.html#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html#portfolio" class="nav-link">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html#project" class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html#contact" class="nav-link">Contact</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </nav>
+        <!-- Nav Bar ends -->
+    </header>    
+
+    <section class="section-padding" id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2 class="title text-center">
+                        <span class="port-title">Highland in China</span>
+                    </h2>
+                    <p class="text-center"> Location: XiZang, China </p>
+                    <p class="text-center"> Date: July 2016 </p>
+                </div>
+            </div>
+
+            <!-- Image Grid -->
+            <div class="container">
+                
+                <div class="gallery" id="gallery">
+                    <div class="mb-3 pics animation"><img src="img/port/10.Landscape-2016HighlandChina/img1.jpg" class="fit-image wow fadeInLeft" alt="portfolio" onclick="openModal();currentSlide(1)"></div>
+                    <div class="mb-3 pics animation"><img src="img/port/10.Landscape-2016HighlandChina/img2.jpg" class="fit-image wow fadeInLeft" alt="portfolio" onclick="openModal();currentSlide(2)"></div>
+                    <div class="mb-3 pics animation"><img src="img/port/10.Landscape-2016HighlandChina/img3.jpg" class="fit-image wow fadeInLeft" alt="portfolio" onclick="openModal();currentSlide(3)"></div>
+                    <div class="mb-3 pics animation"><img src="img/port/10.Landscape-2016HighlandChina/img4.jpg" class="fit-image wow fadeInLeft" alt="portfolio" onclick="openModal();currentSlide(4)"></div>
+                    <div class="mb-3 pics animation"><img src="img/port/10.Landscape-2016HighlandChina/img5.jpg" class="fit-image wow fadeInLeft" alt="portfolio" onclick="openModal();currentSlide(5)"></div>
+                    <div class="mb-3 pics animation"><img src="img/port/10.Landscape-2016HighlandChina/img6.jpg" class="fit-image wow fadeInLeft" alt="portfolio" onclick="openModal();currentSlide(6)"></div>
+                    <div class="mb-3 pics animation"><img src="img/port/10.Landscape-2016HighlandChina/img7.jpg" class="fit-image wow fadeInLeft" alt="portfolio" onclick="openModal();currentSlide(7)"></div>
+                    <div class="mb-3 pics animation"><img src="img/port/10.Landscape-2016HighlandChina/img8.jpg" class="fit-image wow fadeInLeft" alt="portfolio" onclick="openModal();currentSlide(8)"></div>
+                    <div class="mb-3 pics animation"><img src="img/port/10.Landscape-2016HighlandChina/img9.jpg" class="fit-image wow fadeInLeft" alt="portfolio" onclick="openModal();currentSlide(9)"></div>
+                    <div class="mb-3 pics animation"><img src="img/port/10.Landscape-2016HighlandChina/img10.jpg" class="fit-image wow fadeInLeft" alt="portfolio" onclick="openModal();currentSlide(10)"></div>
+                    <div class="mb-3 pics animation"><img src="img/port/10.Landscape-2016HighlandChina/img11.jpg" class="fit-image wow fadeInLeft" alt="portfolio" onclick="openModal();currentSlide(11)"></div>
+                    <div class="mb-3 pics animation"><img src="img/port/10.Landscape-2016HighlandChina/img12.jpg" class="fit-image wow fadeInLeft" alt="portfolio" onclick="openModal();currentSlide(12)"></div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div id="my-modal" class="modal">
+
+        <!-- close button -->
+        <span class="close" onclick="closeModal()">&times;</span>
+
+        <!-- content for modal -->
+        <div class="modal-content">
+            <!-- image for modal(image viewer) -->
+            <div class="my-slides">
+                <div class="numbertext"> 1 / 12</div>
+                <img src="img/port/10.Landscape-2016HighlandChina/img1.jpg" class="landscape-image"  alt="portfolio-modal">
+            </div>
+
+            <div class="my-slides">
+                <div class="numbertext"> 2 / 12</div>
+                <img src="img/port/10.Landscape-2016HighlandChina/img2.jpg" class="landscape-image"  alt="portfolio-modal">
+            </div>
+
+            <div class="my-slides">
+                <div class="numbertext"> 3 / 12</div>
+                <img src="img/port/10.Landscape-2016HighlandChina/img3.jpg" class="landscape-image"  alt="portfolio-modal">
+            </div>
+
+            <div class="my-slides">
+                <div class="numbertext"> 4 / 12</div>
+                <img src="img/port/10.Landscape-2016HighlandChina/img4.jpg" class="landscape-image"  alt="portfolio-modal">
+            </div>
+
+            <div class="my-slides">
+                <div class="numbertext"> 5 / 12</div>
+                <img src="img/port/10.Landscape-2016HighlandChina/img5.jpg" class="landscape-image"  alt="portfolio-modal">
+            </div>
+
+            <div class="my-slides">
+                <div class="numbertext"> 6 / 12</div>
+                <img src="img/port/10.Landscape-2016HighlandChina/img6.jpg" class="landscape-image"  alt="portfolio-modal">
+            </div>
+
+            <div class="my-slides">
+                <div class="numbertext"> 7 / 12</div>
+                <img src="img/port/10.Landscape-2016HighlandChina/img7.jpg" class="landscape-image"  alt="portfolio-modal">
+            </div>
+
+            <div class="my-slides">
+                <div class="numbertext"> 8 / 12</div>
+                <img src="img/port/10.Landscape-2016HighlandChina/img8.jpg" class="landscape-image"  alt="portfolio-modal">
+            </div>
+
+            <div class="my-slides">
+                <div class="numbertext"> 9 / 12</div>
+                <img src="img/port/10.Landscape-2016HighlandChina/img9.jpg" class="landscape-image"  alt="portfolio-modal">
+            </div>
+
+            <div class="my-slides">
+                <div class="numbertext"> 10 / 12</div>
+                <img src="img/port/10.Landscape-2016HighlandChina/img10.jpg" class="landscape-image"  alt="portfolio-modal">
+            </div>
+
+            <div class="my-slides">
+                <div class="numbertext"> 11 / 12</div>
+                <img src="img/port/10.Landscape-2016HighlandChina/img11.jpg" class="landscape-image"  alt="portfolio-modal">
+            </div>
+
+            <div class="my-slides">
+                <div class="numbertext"> 12 / 12</div>
+                <img src="img/port/10.Landscape-2016HighlandChina/img12.jpg" class="landscape-image"  alt="portfolio-modal">
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="changeSlides(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlides(1)">&#10095;</a>
+
+
+
+        </div>
+    </div>
+
+
+
+
+    <div class="clearfix"></div>
+
+    
+
+    <section class="section-padding wow fadeIn" data-wow-delay="0.6s" id="contact">
+        <div class="container-fluid">
+            <div class="contact-sec text-center">
+                <!-- title text -->
+                <h2 class="text-center title text-dark"><strong>Contact Me</strong></h2>
+                <p class="contact-text">Open to accept photographer request.</p>
+
+                <p class="contact-text">
+                    Email: ruikevinzhang@gmail.com <br class="break">
+                    Location: Toronto, ON, Canada <br class="break">
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <div class="clearfix"></div>
+
+    <footer class="social-footer">
+        <ul class="social">
+            <li> <a href="https://www.facebook.com/kevin.zhang.79274089" target="_blank"><i
+                        class="fa fa-facebook"></i></a></li>
+
+            <li> <a href="https://www.youtube.com/channel/UCnzSGRJWMe3MxC3iwtFs7ZQ?view_as=subscriber" target="_blank"><i
+                        class="fa fa-youtube"></i></a></li>
+
+            <li> <a href="https://www.instagram.com/ruikevinzhang/" target="_blank"><i class="fa fa-instagram"></i></a>
+            </li>
+
+            <li> <a href="https://www.linkedin.com/in/ruikevinzhang/" target="_blank"><i class="fa fa-linkedin"></i></a>
+            </li>
+        </ul>
+    </footer>
+
+    <footer class="copyright text-center">
+
+        <div class="container">
+
+
+            <div class="d-flex flex-wrap justify-content-center">
+                <div class="p-2">
+
+                    <div class="credits text-white">
+                        <p>All Rights Reserved</p>
+                        <p>&copy; Photography. </p>
+                        <p>design and built by Kevin (RuiCheng) Zhang </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row text-center d-block">
+                <a href="#my-portfolio" title="To Top"><i class="fa fa-angle-up"></i></a>
+            </div>
+
+        </div>
+
+
+
+
+
+    </footer>
+
+
+
+    <!-- bootstrap js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+        
+
+    <!-- JS Plug-in Smooth Srool Effect -->
+    <script type="text/javascript" src="js/jquery.smoothscroll.js"></script>
+    <!-- JS Plug -->
+    <script type="text/javascript" src="js/wow.min.js"></script>
+
+    <script type="text/javascript">new WOW().init()</script>
+
+    <script type="text/javascript" src="js/portscripts.js"></script>
+
+</body>
+
+</html>
